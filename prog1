@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main ()
+{
+float l,w; // длина и ширина прямоугольника
+float s; // площадь прямоугольника
+printf ("\nCalculating the area of a rectange\n"); //Вычисление площади прямоугольника
+printf ("Enter the intial data:\n"); // Введите исходные данные
+printf ("Leght (cm.) ->"); // Длинна (см.)
+scanf ("%f", &l);
+printf ("Width (cm.) ->"); // Ширина (см.)
+scanf ("%f", &w);
+s=l*w;
+printf ("Area of a parallelogram: %10.2f kv.cm. \n", s); // Площадь параллелограмма кв.см.
+
+printf("\n\nClick of finish <Enter>"); // Для завершения нажмите <Enter>
+
+}
