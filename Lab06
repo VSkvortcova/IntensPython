@@ -1,0 +1,15 @@
+def find_pythagorean_triples(limit): # Задаём максимальное значение a, b, c
+    triples = [] # Пустой список
+    for a in range(1, limit + 1):
+        for b in range(a, limit + 1):  # Начинаем с a, чтобы избежать дублирования
+            c = (a**2 + b**2) ** 0.5 
+            if c.is_integer() and c <= limit:
+                triples.append((a, b, int(c)))
+    return triples 
+
+limit = 25
+pythagorean_triples = find_pythagorean_triples(limit)
+
+print("Пифагоровы тройки чисел, не превышающих 25:")
+for triple in pythagorean_triples:
+    print(triple)
